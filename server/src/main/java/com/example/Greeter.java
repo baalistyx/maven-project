@@ -12,7 +12,7 @@ public class Greeter {
 
   }
 
-  /**
+  /** .
    * Javadoc
    */
   public final String greet(final String someone) {
