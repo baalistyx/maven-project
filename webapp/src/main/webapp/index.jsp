@@ -3,3 +3,5 @@
 
 <h3>LOOK MOM, NO HANDS!</h3>
 
+This should upload and deploy to stage without my input
+(Prod should require my input....)
