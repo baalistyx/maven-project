@@ -2,8 +2,12 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'tomcat_dev', defaultValue: 'localhost:8090', description 'tomcat development')
-        string(name: 'tomcat_prod', defaultValue: 'localhost:9091', description 'tomcat production')
+        string(name: 'tomcat_dev', defaultValue: 'localhost:8090', description: 'tomcat development')
+        string(name: 'tomcat_prod', defaultValue: 'localhost:9091', description: 'tomcat production')
+    }
+
+    triggers {
+        pollSCM('* * * * * ')
     }
     stages{
         stage('Build'){
